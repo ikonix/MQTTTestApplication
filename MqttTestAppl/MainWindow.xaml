@@ -1,0 +1,26 @@
+﻿<Window x:Class="MqttTestAppl.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MqttTestAppl"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Label x:Name="label" Content="IP" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,13,0,0"/>
+        <TextBox x:Name="ipTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="83.212.82.13" VerticalAlignment="Top" Width="350" Margin="77,16,0,0"/>
+        <Label x:Name="label1" Content="Content" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,44,0,0"/>
+        <Button x:Name="connectButton" Content="Connect" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="432,19,0,0" Click="connectClick"/>
+        <TextBox x:Name="contentTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="test/praktikum" VerticalAlignment="Top" Width="350" Margin="77,48,0,0"/>
+        <Button x:Name="subscribeButton" Content="Subscribe" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="432,50,0,0" Click="subscribeClick"/>
+        <Label x:Name="label2" Content="Topic" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,75,0,0"/>
+        <Label x:Name="label3" Content="Received" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,106,0,0"/>
+        <TextBox x:Name="topicTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="108" Margin="77,79,0,0" Text="test/praktikum"/>
+        <Button x:Name="publishButton" Content="Publish" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="432,81,0,0" Click="publishClick"/>
+        <Label x:Name="label4" Content="Message" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="190,76,0,0"/>
+        <TextBox x:Name="messageTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" Margin="252,78,0,0"/>
+        <TextBox x:Name="receivedTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" Margin="77,110,0,0"/>
+        <TextBox x:Name="statusTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="517" Margin="0,296,0,0"/>
+
+    </Grid>
+</Window>
